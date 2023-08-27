@@ -1,19 +1,17 @@
 [package]
 name = "ocaml-interop"
-version = "0.8.8" # remember to update html_root_url
+version = "0.9.1"                                             # remember to update html_root_url
 authors = ["Bruno Deferrari <utizoc@gmail.com>"]
 license = "MIT"
 description = "Utilities for Rust and OCaml interoperability"
-homepage = "http://github.com/tizoc/ocaml-interop"
-repository = "http://github.com/tizoc/ocaml-interop"
+homepage = "https://github.com/tizoc/ocaml-interop"
+repository = "https://github.com/tizoc/ocaml-interop"
 keywords = ["ocaml", "rust", "ffi", "interop"]
 edition = "2018"
-exclude = [
-    ".github/*",
-]
+exclude = [".github/*"]
 
 [package.metadata.docs.rs]
-features = [ "without-ocamlopt" ]
+features = ["without-ocamlopt"]
 
 [dependencies]
 ocaml-sys = "0.23"
